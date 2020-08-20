@@ -1,0 +1,88 @@
+
+
+C:\test-code\20200817\issue1\amol-aro-parent>mvn deploy -DaltDeploymentRepository=aro::default::https://nexus-agl.absa.co.za/repository/ARO/ -DrepositoryId="https://nexus-agl.absa.co.za/repository/ARO/" -Dpackaging=pom
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ----------------------< com.absa:amol-aro-parent >----------------------
+[INFO] Building AMOL Parent POM 1.2
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO]
+[INFO] --- maven-help-plugin:3.2.0:active-profiles (show-profiles) @ amol-aro-parent ---
+[INFO]
+Active Profiles for Project 'com.absa:amol-aro-parent:pom:1.2':
+
+The following profiles are active:
+
+ - aro (source: external)
+ - development (source: external)
+ - fuse-development (source: external)
+ - wildfly-home (source: com.absa:amol-aro-parent:1.2)
+ - wildfly (source: com.absa:amol-aro-parent:1.2)
+ - fuse (source: com.absa:amol-aro-parent:1.2)
+ - development (source: com.absa:amol-aro-parent:1.2)
+
+
+
+[INFO]
+[INFO] --- maven-enforcer-plugin:3.0.0-M3:enforce (enforce) @ amol-aro-parent ---
+[INFO] Adding ignore: module-info
+[INFO] Adding ignore: META-INF/versions/*/module-info
+[WARNING] Could not find junit:junit:jar:4.13:test at null
+[WARNING] Could not find org.apache.camel:camel-test-cdi:jar:2.21.0.fuse-760027-redhat-00001:test at null
+[WARNING] Could not find io.rest-assured:xml-path:jar:4.3.1:test at null
+[WARNING] Could not find org.microprofile-ext.openapi-ext:openapi-ui:jar:1.1.4:runtime at null
+[WARNING] Could not find org.apache.camel:camel-http:jar:2.21.0.fuse-760027-redhat-00001:compile at null
+[WARNING] Could not find org.microprofile-ext.health-ext:healthprobe-system:jar:1.0.5:runtime at null
+[WARNING] Could not find org.jboss.arquillian.junit:arquillian-junit-container:jar:1.6.0.Final:test at null
+[WARNING] Could not find org.projectlombok:lombok:jar:1.18.12:compile at null
+[WARNING] Could not find org.eclipse:yasson:jar:1.0.7:test at null
+[WARNING] Could not find jakarta.xml.ws:jakarta.xml.ws-api:jar:2.3.3:provided at null
+[WARNING] Could not find org.junit.vintage:junit-vintage-engine:jar:5.6.2:test at null
+[WARNING] Could not find org.jboss.shrinkwrap.descriptors:shrinkwrap-descriptors-depchain:pom:2.0.0:test at null
+[WARNING] Could not find org.apache.camel:camel-cxf:jar:2.21.0.fuse-760027-redhat-00001:compile at null
+[WARNING] Could not find org.apache.camel:camel-servlet:jar:2.21.0.fuse-760027-redhat-00001:compile at null
+[WARNING] Could not find org.microprofile-ext.jaxrs-ext:beanvalidation-exception-handler:jar:1.0.0:runtime at null
+[WARNING] Could not find org.microprofile-ext.jaxrs-ext:configurable-exception-handler:jar:1.0.0:runtime at null
+[WARNING] Could not find org.microprofile-ext.health-ext:health-ui:jar:1.0.5:runtime at null
+[WARNING] Could not find org.jvnet.jaxb2_commons:jaxb2-basics-runtime:jar:0.12.0:provided at null
+[WARNING] Could not find org.arquillian.container:arquillian-chameleon-junit-container-starter:jar:1.0.0.CR6:test at null
+[WARNING] Could not find org.apache.camel:camel-core:jar:2.21.0.fuse-760027-redhat-00001:compile at null
+[WARNING] Could not find org.mockito:mockito-core:jar:3.3.3:test at null
+[WARNING] Could not find io.rest-assured:rest-assured:jar:4.3.1:test at null
+[WARNING] Could not find org.slf4j:slf4j-api:jar:1.7.30:provided at null
+[WARNING] Could not find org.junit.jupiter:junit-jupiter-engine:jar:5.6.2:test at null
+[WARNING] Could not find org.microprofile-ext.restclient-ext:configurable-errorresponse-handler:jar:1.0.0:runtime at null
+[WARNING] Could not find io.rest-assured:json-path:jar:4.3.1:test at null
+[WARNING] Could not find org.microprofile-ext.health-ext:healthprobe-jvm:jar:1.0.5:runtime at null
+[WARNING] Could not find jakarta.platform:jakarta.jakartaee-api:jar:8.0.0:provided at null
+[WARNING] Could not find org.mockito:mockito-junit-jupiter:jar:3.3.3:test at null
+[WARNING] Could not find org.apache.camel:camel-cdi:jar:2.21.0.fuse-760027-redhat-00001:compile at null
+[WARNING] Could not find org.eclipse.microprofile:microprofile:pom:3.3:provided at null
+[INFO]
+[INFO] --- maven-enforcer-plugin:3.0.0-M3:enforce (enforce-java-version) @ amol-aro-parent ---
+[INFO]
+[INFO] --- maven-enforcer-plugin:3.0.0-M3:enforce (enforce-maven-version) @ amol-aro-parent ---
+[INFO]
+[INFO] --- wildfly-maven-plugin:2.0.2.Final:deploy-only (deploy) @ amol-aro-parent ---
+[INFO]
+[INFO] --- maven-install-plugin:3.0.0-M1:install (default-install) @ amol-aro-parent ---
+[INFO] Installing C:\test-code\20200817\issue1\amol-aro-parent\pom.xml to C:\Users\AB011PJ\.m2\repository\com\absa\amol-aro-parent\1.2\amol-aro-parent-1.2.pom
+[INFO]
+[INFO] --- maven-deploy-plugin:3.0.0-M1:deploy (default-deploy) @ amol-aro-parent ---
+[INFO] Using alternate deployment repository aro::default::https://nexus-agl.absa.co.za/repository/ARO/
+Uploading to aro::default: https://nexus-agl.absa.co.za/repository/ARO/com/absa/amol-aro-parent/1.2/amol-aro-parent-1.2.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  34.738 s
+[INFO] Finished at: 2020-08-18T22:22:31+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-deploy-plugin:3.0.0-M1:deploy (default-deploy) on project amol-aro-parent: ArtifactDeployerException: Failed to deploy artifacts: Could not transfer artifact com.absa:amol-aro-parent:pom:1.2 from/to aro::default (https://nexus-agl.absa.co.za/repository/ARO/): Transfer failed for https://nexus-agl.absa.co.za/repository/ARO/com/absa/amol-aro-parent/1.2/amol-aro-parent-1.2.pom 401 Unauthorized -> [Help 1]
+[ERROR]
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR]
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+
+C:\test-code\20200817\issue1\amol-aro-parent>
